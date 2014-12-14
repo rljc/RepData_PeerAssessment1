@@ -162,5 +162,8 @@ xyplot(number_of_steps ~ interval | factor(day),
        type="l",
        xlab = "Interval",
        ylab = "Number of Steps",
-       main = "Activity Pattern on Week days vs. Week End")
+       main = "Activity Pattern on Week days vs. Week End",
+       rot = 90)
 ```
+
+The chart above shows difference in activity patterns that woul require further analysis.

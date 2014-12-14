@@ -218,8 +218,11 @@ activity_by_type_of_day = aggregate(number_of_steps ~ interval + day, activityDT
     mean)
 library(lattice)
 xyplot(number_of_steps ~ interval | factor(day), data = activity_by_type_of_day, 
-    aspect = 1/2, type = "l", xlab = "Interval", ylab = "Number of Steps", main = "Activity Pattern on Week days vs. Week End")
+    aspect = 1/2, type = "l", xlab = "Interval", ylab = "Number of Steps", main = "Activity Pattern on Week days vs. Week End", 
+    rot = 90)
 ```
 
 ![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12.png) 
 
+
+The chart above shows difference in activity patterns that woul require further analysis.
